@@ -167,5 +167,19 @@ public class ScriptThaumicMachina implements IScriptLoader {
                         .add(Aspect.getAspect("alienis"), 18).add(Aspect.getAspect("telum"), 21));
         TCHelper.setResearchComplexity("@WAND_AUGMENTATION_CONTACT_DISCHARGE", 3);
         ThaumcraftApi.addWarpToResearch("@WAND_AUGMENTATION_CONTACT_DISCHARGE", 5);
+        TCHelper.setResearchAspects(
+                "@WAND_AUGMENTATION_TAINTED_CORE",
+                new AspectList().add(Aspect.getAspect("instrumentum"), 3).add(Aspect.getAspect("praecantatio"), 6)
+                        .add(Aspect.getAspect("perditio"), 12).add(Aspect.getAspect("vitium"), 9)
+                        .add(Aspect.getAspect("tenebrae"), 15).add(Aspect.getAspect("alienis"), 18)
+                        .add(Aspect.getAspect("cognitio"), 21));
+        TCHelper.setResearchComplexity("@WAND_AUGMENTATION_TAINTED_CORE", 3);
+        TCHelper.setResearchAspects(
+                "@WAND_AUGMENTATION_TAINT_CAPPING",
+                new AspectList().add(Aspect.getAspect("instrumentum"), 3).add(Aspect.getAspect("praecantatio"), 6)
+                        .add(Aspect.getAspect("vitium"), 9).add(Aspect.getAspect("auram"), 12)
+                        .add(Aspect.getAspect("alienis"), 15).add(Aspect.getAspect("potentia"), 18)
+                        .add(Aspect.getAspect("cognitio"), 21));
+        TCHelper.setResearchComplexity("@WAND_AUGMENTATION_TAINT_CAPPING", 3);
     }
 }
